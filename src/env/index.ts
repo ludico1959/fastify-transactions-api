@@ -11,6 +11,7 @@ const mySchema = z.object({
   NODE_ENV: z.enum(['develop', 'test', 'production']).default('production'),
   DATABASE_CLIENT: z.enum(['sqlite', 'pg']),
   DATABASE_URL: z.string(),
+  HOST_ADDRESS: z.string().default('127.0.0.1'),
   PORT: z.coerce.number().default(3333),
 })
 
