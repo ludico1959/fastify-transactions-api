@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/server.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "tsup src --out-dir build",
     "dev": "tsx watch src/server.ts",
@@ -18,7 +21,7 @@
     "dotenv": "16.4.5",
     "fastify": "4.26.2",
     "knex": "3.1.0",
-    "sqlite3": "5.1.7",
+    "pg": "8.11.5",
     "zod": "3.23.8"
   },
   "devDependencies": {
@@ -26,6 +29,7 @@
     "@types/node": "20.12.10",
     "@types/supertest": "6.0.2",
     "eslint": "8.57.0",
+    "sqlite3": "5.1.7",
     "supertest": "7.0.0",
     "tsx": "4.9.3",
     "typescript": "5.4.5",
